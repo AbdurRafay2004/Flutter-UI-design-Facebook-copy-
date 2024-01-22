@@ -113,14 +113,14 @@ class MyApp extends StatelessWidget {
                             height: 45,
                             child: FilledButton.tonal(
                               onPressed: () {},
-                              child: Text(
+                              style: FilledButton.styleFrom(backgroundColor: Color.fromARGB(255, 232, 232, 232)),
+                              child: const Text(
                                 "What's on your mind?                                                                            ",
                                 style: TextStyle(
                                   color: Colors.grey,
                                 
                                 ),
-                              ),
-                              style: FilledButton.styleFrom(backgroundColor: Color.fromARGB(255, 232, 232, 232))
+                              )
                             ),
                           )
                         ],
