@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                   radius: 25,
                   child: Icon(Icons.search, color: Colors.black),
                 ),
-                SizedBox(width: 10), 
+                SizedBox(width: 10),
                 //chat icon
                 CircleAvatar(
                   backgroundColor: Color.fromARGB(255, 232, 232, 232),
@@ -107,17 +107,20 @@ class MyApp extends StatelessWidget {
                             ),
                           ),
                           //button added
-                          const SizedBox(//at first I used container
-                            width: 310, 
+                          SizedBox(
+                            //at first I used container
+                            width: 310,
+                            height: 45,
                             child: FilledButton.tonal(
-                              onPressed: null,
+                              onPressed: () {},
                               child: Text(
                                 "What's on your mind?                                                                            ",
                                 style: TextStyle(
-                                  color:
-                                      Colors.grey, 
+                                  color: Colors.grey,
+                                
                                 ),
                               ),
+                              style: FilledButton.styleFrom(backgroundColor: Color.fromARGB(255, 232, 232, 232))
                             ),
                           )
                         ],
