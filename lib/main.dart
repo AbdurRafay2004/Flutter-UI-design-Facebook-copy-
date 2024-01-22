@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                   radius: 25,
                   child: Icon(Icons.search, color: Colors.black),
                 ),
-                SizedBox(width: 10), // Add some spacing between icons
+                SizedBox(width: 10), 
                 //chat icon
                 CircleAvatar(
                   backgroundColor: Color.fromARGB(255, 232, 232, 232),
@@ -48,7 +48,9 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   children: [
                     //row of fb tabs?
+
                     Container(
+                      //container of row (fb tabs)
                       color: Colors.white,
                       height: 60,
                       child: const Row(
@@ -86,9 +88,41 @@ class MyApp extends StatelessWidget {
                           ),
                         ],
                       ),
-                    )
+                    ),
 
                     //whats on your mind section
+                    Container(
+                      color: Colors.white,
+                      height: 80,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(50),
+                            child: const Image(
+                              image: NetworkImage(
+                                  'https://scontent.fdac19-1.fna.fbcdn.net/v/t39.30808-6/266302021_975673536354829_5945301508022550709_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=wQxJObf7KckAX8YmMgi&_nc_ht=scontent.fdac19-1.fna&oh=00_AfARyzKD4C6Wk533eu-at_vcaltTamNNoIhXCmWTuRDNig&oe=65B2E707'),
+                              height: 60,
+                              width: 60,
+                            ),
+                          ),
+                          //button added
+                          const SizedBox(//at first I used container
+                            width: 310, 
+                            child: FilledButton.tonal(
+                              onPressed: null,
+                              child: Text(
+                                "What's on your mind?                                                                            ",
+                                style: TextStyle(
+                                  color:
+                                      Colors.grey, 
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
 
                     //3 buttons, photo , feeling, location
 
