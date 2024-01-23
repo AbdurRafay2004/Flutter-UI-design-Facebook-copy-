@@ -110,10 +110,11 @@ class MyApp extends StatelessWidget {
                           SizedBox(
                             //at first I used container
                             width: 310,
+                            
                             height: 45,
                             child: FilledButton.tonal(
                               onPressed: () {},
-                              style: FilledButton.styleFrom(backgroundColor: Color.fromARGB(255, 232, 232, 232)),
+                              style: FilledButton.styleFrom(backgroundColor: const Color.fromARGB(255, 232, 232, 232)),
                               child: const Text(
                                 "What's on your mind?                                                                            ",
                                 style: TextStyle(
