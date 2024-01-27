@@ -132,6 +132,9 @@ class MyApp extends StatelessWidget {
 
                     //stories section in Row
                   ],
-                ))));
+                )
+                )
+                )
+                );
   }
 }
